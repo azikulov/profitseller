@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profitseller.me | Продвижение</title>
+
+    <link rel="stylesheet" href="../assets/styles/base.css" />
+    <link rel="stylesheet" href="../assets/styles/promotion/parsing.css" />
+
+    <!-- Layout -->
+    <link rel="stylesheet" href="../assets/styles/layout.css" />
+    <script src="../assets/scripts/layout.js"></script>
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container-lg">
+      <div class="header">
+        <div>
+          <div class="header__menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_92_2908)">
+                <path d="M4 6H20" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 12H20" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 18H20" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <defs>
+                <clipPath id="clip0_92_2908">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+
+          <div class="header__logo">
+            <img src="../assets/images/profitseller-logo.png" alt="" width="40" height="40" />
+            <span>Profitseller.me</span>
+          </div>
+        </div>
+
+        <div>
+          <a href="#cabinet-management" class="header__button btn btn-light">Управление кабиниетом</a>
+          <a href="../promotion/index.html" class="header__button btn btn-light header__button_active">Продвижение</a>
+          <a href="#analytics" class="header__button btn btn-light">Аналитика</a>
+        </div>
+
+        <div>
+          <div class="header__balance">
+            <span>Реферальный баланс</span>
+            <span>1 842 руб</span>
+          </div>
+
+          <div class="header__balance">
+            <span>Баланс</span>
+            <span>13 768 руб</span>
+          </div>
+
+          <div class="header__user-info">
+            <span>Ivan Ivanov</span>
+            <span>ivanovivan@mail.ru</span>
+            <img src="../assets/images/user-photo.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="side-menu">
+        <div class="side-menu__badge badge bg-primary">Top</div>
+
+        <a href="#side-menu/link" class="side-menu__link">
+          <img src="../assets/images/icons/1.svg" width="24" height="24" alt="" />
+          <span>Автоматизация стратегий</span>
+        </a>
+
+        <a href="#side-menu/link" class="side-menu__link">
+          <img src="../assets/images/icons/2.svg" width="24" height="24" alt="" />
+          <span>Авторепутация</span>
+        </a>
+
+        <hr class="divider" />
+
+        <a href="./parsing.html" class="side-menu__link side-menu__link_active">
+          <img src="../assets/images/icons/3.svg" width="24" height="24" alt="" />
+          <span>Парсинг</span>
+        </a>
+
+        <a href="./index.html" class="side-menu__link">
+          <img src="../assets/images/icons/4.svg" width="24" height="24" alt="" />
+          <span>Выкупы</span>
+        </a>
+
+        <a href="#side-menu/link" class="side-menu__link">
+          <img src="../assets/images/icons/5.svg" width="24" height="24" alt="" />
+          <span>Поисковые запросы</span>
+        </a>
+
+        <a href="#side-menu/link" class="side-menu__link">
+          <img src="../assets/images/icons/6.svg" width="24" height="24" alt="" />
+          <span>Управление рекламой</span>
+        </a>
+
+        <a href="#side-menu/link" class="side-menu__link">
+          <img src="../assets/images/icons/7.svg" width="24" height="24" alt="" />
+          <span>Накрутка лайков</span>
+        </a>
+
+        <a href="#side-menu/link" class="side-menu__link">
+          <img src="../assets/images/icons/8.svg" width="24" height="24" alt="" />
+          <span>Добавление в избранное</span>
+        </a>
+      </div>
+
+      <div class="content">
+        <div class="link-group">
+          <div>
+            <a href="#" class="link-group__link mr-4 btn btn-link disabled">Парсинг позиций</a>
+            <a href="#" class="link-group__link mr-4 btn btn-link">Парсинг рекламы</a>
+            <a href="#" class="link-group__link mr-4 btn btn-link">Парсинг отзывов</a>
+            <a href="#" class="link-group__link btn btn-link">Парсинг содержимого карточек</a>
+          </div>
+
+          <div class="link-group-right">
+            <a href="#" class="link-group__btn btn btn-primary">Добавить новую заявку</a>
+            <a href="#" class="link-group__btn btn btn-primary">СЕО оптимизация</a>
+          </div>
+        </div>
+
+        <table class="table">
+          <thead class="table-head">
+            <th class="table-head__title pl-8" scope="col">Название команий</th>
+            <th class="table-head__title" scope="col">Число запросов</th>
+            <th class="table-head__title" scope="col">Число артикулов</th>
+            <th class="table-head__title" scope="col">Регионы парсинга</th>
+            <th class="table-head__title" scope="col">Дата создания</th>
+            <th class="table-head__title" scope="col"></th>
+            <th class="table-head__title" scope="col"></th>
+            <th class="table-head__title" scope="col"></th>
+          </thead>
+
+          <tbody class="table-body">
+            <tr>
+              <td class="table-body__content">Носки</td>
+              <td class="table-body__content">123</td>
+              <td class="table-body__content">123</td>
+              <td class="table-body__content">5</td>
+              <td class="table-body__content">24.06.22</td>
+
+              <td class="table-body__content">
+                <a href="#" class="table-body__link btn btn-link">Парсинг</a>
+              </td>
+              <td class="table-body__content">
+                <a href="#" class="table-body__link btn btn-link"
+                  ><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.27 5.4137L10.5493 1.73151L11.775 0.50411C12.1106 0.168037 12.5229 0 13.012 0C13.5005 0 13.9126 0.168037 14.2482 0.50411L15.4738 1.73151C15.8094 2.06758 15.9845 2.47321 15.9991 2.94838C16.0137 3.42298 15.8532 3.82831 15.5176 4.16438L14.27 5.4137ZM13.0006 6.70685L3.72072 16H0V12.274L9.27991 2.98082L13.0006 6.70685Z"
+                      fill="#106CF6"
+                    />
+                  </svg>
+                </a>
+              </td>
+              <td class="table-body__content">
+                <a href="#" class="table-body__link btn btn-link"
+                  ><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1 14.2222C1 15.2 1.9 16 3 16H11C12.1 16 13 15.2 13 14.2222V3.55556H1V14.2222ZM14 0.888889H10.5L9.5 0H4.5L3.5 0.888889H0V2.66667H14V0.888889Z"
+                      fill="#106CF6"
+                    />
+                  </svg>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="table-body__content">Носки</td>
+              <td class="table-body__content">123</td>
+              <td class="table-body__content">123</td>
+              <td class="table-body__content">5</td>
+              <td class="table-body__content">24.06.22</td>
+
+              <td class="table-body__content">
+                <a href="#" class="table-body__link btn btn-link">Парсинг</a>
+              </td>
+              <td class="table-body__content">
+                <a href="#" class="table-body__link btn btn-link"
+                  ><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.27 5.4137L10.5493 1.73151L11.775 0.50411C12.1106 0.168037 12.5229 0 13.012 0C13.5005 0 13.9126 0.168037 14.2482 0.50411L15.4738 1.73151C15.8094 2.06758 15.9845 2.47321 15.9991 2.94838C16.0137 3.42298 15.8532 3.82831 15.5176 4.16438L14.27 5.4137ZM13.0006 6.70685L3.72072 16H0V12.274L9.27991 2.98082L13.0006 6.70685Z"
+                      fill="#106CF6"
+                    />
+                  </svg>
+                </a>
+              </td>
+              <td class="table-body__content">
+                <a href="#" class="table-body__link btn btn-link"
+                  ><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1 14.2222C1 15.2 1.9 16 3 16H11C12.1 16 13 15.2 13 14.2222V3.55556H1V14.2222ZM14 0.888889H10.5L9.5 0H4.5L3.5 0.888889H0V2.66667H14V0.888889Z"
+                      fill="#106CF6"
+                    />
+                  </svg>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="table-body__content">Носки</td>
+              <td class="table-body__content">123</td>
+              <td class="table-body__content">123</td>
+              <td class="table-body__content">5</td>
+              <td class="table-body__content">24.06.22</td>
+
+              <td class="table-body__content">
+                <a href="#" class="table-body__link btn btn-link">Парсинг</a>
+              </td>
+              <td class="table-body__content">
+                <a href="#" class="table-body__link btn btn-link"
+                  ><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.27 5.4137L10.5493 1.73151L11.775 0.50411C12.1106 0.168037 12.5229 0 13.012 0C13.5005 0 13.9126 0.168037 14.2482 0.50411L15.4738 1.73151C15.8094 2.06758 15.9845 2.47321 15.9991 2.94838C16.0137 3.42298 15.8532 3.82831 15.5176 4.16438L14.27 5.4137ZM13.0006 6.70685L3.72072 16H0V12.274L9.27991 2.98082L13.0006 6.70685Z"
+                      fill="#106CF6"
+                    />
+                  </svg>
+                </a>
+              </td>
+              <td class="table-body__content">
+                <a href="#" class="table-body__link btn btn-link"
+                  ><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1 14.2222C1 15.2 1.9 16 3 16H11C12.1 16 13 15.2 13 14.2222V3.55556H1V14.2222ZM14 0.888889H10.5L9.5 0H4.5L3.5 0.888889H0V2.66667H14V0.888889Z"
+                      fill="#106CF6"
+                    />
+                  </svg>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="table-body__content">Носки</td>
+              <td class="table-body__content">123</td>
+              <td class="table-body__content">123</td>
+              <td class="table-body__content">5</td>
+              <td class="table-body__content">24.06.22</td>
+
+              <td class="table-body__content">
+                <a href="#" class="table-body__link btn btn-link">Парсинг</a>
+              </td>
+              <td class="table-body__content">
+                <a href="#" class="table-body__link btn btn-link"
+                  ><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.27 5.4137L10.5493 1.73151L11.775 0.50411C12.1106 0.168037 12.5229 0 13.012 0C13.5005 0 13.9126 0.168037 14.2482 0.50411L15.4738 1.73151C15.8094 2.06758 15.9845 2.47321 15.9991 2.94838C16.0137 3.42298 15.8532 3.82831 15.5176 4.16438L14.27 5.4137ZM13.0006 6.70685L3.72072 16H0V12.274L9.27991 2.98082L13.0006 6.70685Z"
+                      fill="#106CF6"
+                    />
+                  </svg>
+                </a>
+              </td>
+              <td class="table-body__content">
+                <a href="#" class="table-body__link btn btn-link"
+                  ><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1 14.2222C1 15.2 1.9 16 3 16H11C12.1 16 13 15.2 13 14.2222V3.55556H1V14.2222ZM14 0.888889H10.5L9.5 0H4.5L3.5 0.888889H0V2.66667H14V0.888889Z"
+                      fill="#106CF6"
+                    />
+                  </svg>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="table-body__content">Носки</td>
+              <td class="table-body__content">123</td>
+              <td class="table-body__content">123</td>
+              <td class="table-body__content">5</td>
+              <td class="table-body__content">24.06.22</td>
+
+              <td class="table-body__content">
+                <a href="#" class="table-body__link btn btn-link">Парсинг</a>
+              </td>
+              <td class="table-body__content">
+                <a href="#" class="table-body__link btn btn-link"
+                  ><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.27 5.4137L10.5493 1.73151L11.775 0.50411C12.1106 0.168037 12.5229 0 13.012 0C13.5005 0 13.9126 0.168037 14.2482 0.50411L15.4738 1.73151C15.8094 2.06758 15.9845 2.47321 15.9991 2.94838C16.0137 3.42298 15.8532 3.82831 15.5176 4.16438L14.27 5.4137ZM13.0006 6.70685L3.72072 16H0V12.274L9.27991 2.98082L13.0006 6.70685Z"
+                      fill="#106CF6"
+                    />
+                  </svg>
+                </a>
+              </td>
+              <td class="table-body__content">
+                <a href="#" class="table-body__link btn btn-link"
+                  ><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1 14.2222C1 15.2 1.9 16 3 16H11C12.1 16 13 15.2 13 14.2222V3.55556H1V14.2222ZM14 0.888889H10.5L9.5 0H4.5L3.5 0.888889H0V2.66667H14V0.888889Z"
+                      fill="#106CF6"
+                    />
+                  </svg>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="table-body__content">Носки</td>
+              <td class="table-body__content">123</td>
+              <td class="table-body__content">123</td>
+              <td class="table-body__content">5</td>
+              <td class="table-body__content">24.06.22</td>
+
+              <td class="table-body__content">
+                <a href="#" class="table-body__link btn btn-link">Парсинг</a>
+              </td>
+              <td class="table-body__content">
+                <a href="#" class="table-body__link btn btn-link"
+                  ><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.27 5.4137L10.5493 1.73151L11.775 0.50411C12.1106 0.168037 12.5229 0 13.012 0C13.5005 0 13.9126 0.168037 14.2482 0.50411L15.4738 1.73151C15.8094 2.06758 15.9845 2.47321 15.9991 2.94838C16.0137 3.42298 15.8532 3.82831 15.5176 4.16438L14.27 5.4137ZM13.0006 6.70685L3.72072 16H0V12.274L9.27991 2.98082L13.0006 6.70685Z"
+                      fill="#106CF6"
+                    />
+                  </svg>
+                </a>
+              </td>
+              <td class="table-body__content">
+                <a href="#" class="table-body__link btn btn-link"
+                  ><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1 14.2222C1 15.2 1.9 16 3 16H11C12.1 16 13 15.2 13 14.2222V3.55556H1V14.2222ZM14 0.888889H10.5L9.5 0H4.5L3.5 0.888889H0V2.66667H14V0.888889Z"
+                      fill="#106CF6"
+                    />
+                  </svg>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="table-body__content">Носки</td>
+              <td class="table-body__content">123</td>
+              <td class="table-body__content">123</td>
+              <td class="table-body__content">5</td>
+              <td class="table-body__content">24.06.22</td>
+
+              <td class="table-body__content">
+                <a href="#" class="table-body__link btn btn-link">Парсинг</a>
+              </td>
+              <td class="table-body__content">
+                <a href="#" class="table-body__link btn btn-link"
+                  ><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.27 5.4137L10.5493 1.73151L11.775 0.50411C12.1106 0.168037 12.5229 0 13.012 0C13.5005 0 13.9126 0.168037 14.2482 0.50411L15.4738 1.73151C15.8094 2.06758 15.9845 2.47321 15.9991 2.94838C16.0137 3.42298 15.8532 3.82831 15.5176 4.16438L14.27 5.4137ZM13.0006 6.70685L3.72072 16H0V12.274L9.27991 2.98082L13.0006 6.70685Z"
+                      fill="#106CF6"
+                    />
+                  </svg>
+                </a>
+              </td>
+              <td class="table-body__content">
+                <a href="#" class="table-body__link btn btn-link"
+                  ><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1 14.2222C1 15.2 1.9 16 3 16H11C12.1 16 13 15.2 13 14.2222V3.55556H1V14.2222ZM14 0.888889H10.5L9.5 0H4.5L3.5 0.888889H0V2.66667H14V0.888889Z"
+                      fill="#106CF6"
+                    />
+                  </svg>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
