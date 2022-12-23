@@ -11,13 +11,17 @@ document.addEventListener("DOMContentLoaded", () => {
   menuButton.addEventListener("click", toggleSideMenu);
 
   // Mobile functions
+  if (window.screen.width <= 768) {
+    sideMenu.classList.add("side-menu_hide");
+  }
+  
   const closeSideMenuButton = document.querySelector(
     ".side-menu .side-menu__close"
   );
 
   function closeSideMenu() {
     if (window.screen.width <= 768) {
-      sideMenu.classList.add("side-menu_hide")
+      sideMenu.classList.add("side-menu_hide");
     }
   }
 
