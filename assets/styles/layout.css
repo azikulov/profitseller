@@ -191,4 +191,6 @@
 /* Content */
 .content {
   grid-area: 2 / 2 / 3 / 3;
+  overflow-y: auto;
+  height: calc(100vh - 4rem);
 }
