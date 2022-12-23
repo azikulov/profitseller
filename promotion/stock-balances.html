@@ -7,7 +7,7 @@
     <title>Profitseller.me | Парсинг позиций</title>
 
     <link rel="stylesheet" href="../assets/styles/base.css" />
-    <link rel="stylesheet" href="../assets/styles/promotion/parsing-position.css" />
+    <link rel="stylesheet" href="../assets/styles/promotion/stock-balances.css" />
 
     <!-- Layout -->
     <link rel="stylesheet" href="../assets/styles/layout.css" />
@@ -92,12 +92,12 @@
 
         <hr class="divider" />
 
-        <a href="./parsing.html" class="side-menu__link side-menu__link_active">
+        <a href="./parsing.html" class="side-menu__link">
           <img src="../assets/images/icons/3.svg" width="24" height="24" alt="" />
           <span>Парсинг</span>
         </a>
 
-        <a href="./index.html" class="side-menu__link">
+        <a href="./index.html" class="side-menu__link side-menu__link_active">
           <img src="../assets/images/icons/4.svg" width="24" height="24" alt="" />
           <span>Выкупы</span>
         </a>
@@ -129,50 +129,11 @@
 
           <div>
             <a href="./parsing-position.html" class="header-content__link btn btn-link">Парсинг позиций</a>
-            <a href="./competition-request.html" class="header-content__link btn btn-link disabled"
-              >Конкуренция по запросам</a
-            >
-            <a href="#" class="header-content__link btn btn-link">Остатки по складам</a>
+            <a href="./competition-request.html" class="header-content__link btn btn-link">Конкуренция по запросам</a>
+            <a href="#" class="header-content__link btn btn-link disabled">Остатки по складам</a>
           </div>
 
           <a href="#back" class="header-content__back-link btn btn-link">Назад</a>
-        </div>
-
-        <div class="parsing-regions">
-          <div class="parsing-regions-left">
-            <div class="parsing-regions__title">Регионы парсинга</div>
-          </div>
-
-          <div class="parsing-regions-right">
-            <a href="#" class="parsing-regions__btn btn btn-outline-primary"
-              >ЦФО <br />
-              Москва</a
-            >
-            <a href="#" class="parsing-regions__btn btn btn-outline-primary"
-              >СЗФО <br />
-              Санк-Петербург</a
-            >
-            <a href="#" class="parsing-regions__btn btn btn-outline-primary"
-              >СФО <br />
-              Новосибирск</a
-            >
-            <a href="#" class="parsing-regions__btn btn btn-outline-primary"
-              >ДФО <br />
-              Хабаровск</a
-            >
-            <a href="#" class="parsing-regions__btn btn btn-outline-primary"
-              >УФО <br />
-              Екатеринбург</a
-            >
-            <a href="#" class="parsing-regions__btn btn btn-outline-primary"
-              >ПФО <br />
-              Казань</a
-            >
-            <a href="#" class="parsing-regions__btn btn btn-outline-primary"
-              >ЮФО <br />
-              Казань</a
-            >
-          </div>
         </div>
 
         <div class="download-table">
@@ -183,73 +144,139 @@
           <thead class="table-head">
             <tr>
               <th class="table-head__title" scope="col"></th>
-              <th class="table-head__title" scope="col">Поисковый запрос</th>
-              <th class="table-head__title" scope="col">Частотность WB Недельная</th>
-              <th class="table-head__title" scope="col">Частотность WB Месячная</th>
-              <th class="table-head__title" scope="col">Число карточек</th>
+              <th class="table-head__title" scope="col">Размер</th>
+              <th class="table-head__title" scope="col">Склад</th>
+              <th class="table-head__title" scope="col"></th>
               <th class="table-head__title" scope="col">20.12</th>
+              <th class="table-head__title" scope="col">19.12</th>
               <th class="table-head__title" scope="col">18.12</th>
+              <th class="table-head__title" scope="col">17.12</th>
             </tr>
           </thead>
 
           <tbody class="table-body">
-            <tr>
+            <tr class="table-body__head">
+              <td>24414242</td>
               <td></td>
-              <td>носки мужские</td>
-              <td>15709</td>
-              <td>1363</td>
               <td></td>
-              <td>365</td>
-              <td>365</td>
+              <td>Цена со скидкой</td>
+              <td>765 руб</td>
+              <td>765 руб</td>
+              <td>765 руб</td>
+              <td>765 руб</td>
             </tr>
 
             <tr>
               <td></td>
-              <td>носки мужские</td>
-              <td>15709</td>
-              <td>1363</td>
+              <td>16</td>
+              <td>
+                <span>
+                  СПБ <br />
+                  ЕКБ</span
+                >
+                <span>Σ32</span>
+              </td>
               <td></td>
-              <td>365</td>
-              <td>365</td>
+              <td>16</td>
+              <td>16</td>
+              <td>16</td>
+              <td>16</td>
             </tr>
 
             <tr>
               <td></td>
-              <td>носки мужские</td>
-              <td>15709</td>
-              <td>1363</td>
+              <td>16</td>
+              <td>
+                <span>
+                  СПБ <br />
+                  ЕКБ</span
+                >
+                <span>Σ32</span>
+              </td>
               <td></td>
-              <td>365</td>
-              <td>365</td>
+              <td>16</td>
+              <td>16</td>
+              <td>16</td>
+              <td>16</td>
             </tr>
 
             <tr>
               <td></td>
-              <td>носки мужские</td>
-              <td>15709</td>
-              <td>1363</td>
+              <td>16</td>
+              <td>
+                <span>
+                  СПБ <br />
+                  ЕКБ</span
+                >
+                <span>Σ32</span>
+              </td>
               <td></td>
-              <td>365</td>
-              <td>365</td>
+              <td>16</td>
+              <td>16</td>
+              <td>16</td>
+              <td>16</td>
             </tr>
 
             <tr>
               <td></td>
-              <td>носки мужские</td>
-              <td>15709</td>
-              <td>1363</td>
+              <td>16</td>
+              <td>
+                <span>
+                  СПБ <br />
+                  ЕКБ</span
+                >
+                <span>Σ32</span>
+              </td>
               <td></td>
-              <td>365</td>
-              <td>365</td>
+              <td>16</td>
+              <td>16</td>
+              <td>16</td>
+              <td>16</td>
             </tr>
+
+            <tr class="table-body__head">
+              <td>24414242</td>
+              <td></td>
+              <td></td>
+              <td>Цена со скидкой</td>
+              <td>765 руб</td>
+              <td>765 руб</td>
+              <td>765 руб</td>
+              <td>765 руб</td>
+            </tr>
+
             <tr>
               <td></td>
-              <td>носки мужские</td>
-              <td>15709</td>
-              <td>1363</td>
+              <td>16</td>
+              <td>
+                <span>
+                  СПБ <br />
+                  ЕКБ</span
+                >
+                <span>Σ32</span>
+              </td>
               <td></td>
-              <td>365</td>
-              <td>365</td>
+              <td>16</td>
+              <td>16</td>
+              <td>16</td>
+              <td>16</td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td>16</td>
+              <td>
+                <span>
+                  СПБ <br />
+                  ЕКБ</span
+                >
+                <span>Σ32</span>
+              </td>
+              <td></td>
+              <td>16</td>
+              <td>16</td>
+              <td>16</td>
+              <td>16</td>
             </tr>
           </tbody>
         </table>
