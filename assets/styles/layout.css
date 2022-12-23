@@ -3,6 +3,7 @@
   min-width: 1140px;
   display: grid;
   grid-template-columns: 18.5rem 1fr;
+  position: relative;
 }
 
 .container-lg.side-menu-hide {
@@ -117,6 +118,8 @@
 
 /* Side menu */
 .side-menu {
+  background: #fff;
+  z-index: 1;
   grid-area: 2 / 1 / 3 / 2;
   width: 18.5rem;
   padding-top: 1rem;
@@ -126,6 +129,10 @@
 
 .side-menu.side-menu_hide {
   width: 4rem;
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  overflow-y: auto;
 }
 
 .side-menu .side-menu__link {
@@ -194,3 +201,13 @@
   overflow-y: auto;
   height: calc(100vh - 4rem);
 }
+
+/* Media screens */
+/* @media screen and (max-width: 768px) {
+  .container-lg {
+    grid-template-columns: 4rem 1fr;
+    width: 100vh;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+} */
