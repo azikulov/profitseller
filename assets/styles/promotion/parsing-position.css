@@ -19,6 +19,10 @@
   text-decoration: none;
 }
 
+.header-content .header-content__link-group {
+  display: flex;
+}
+
 .header-content .header-content__back-link {
   text-align: start;
   font-family: Manrope;
@@ -101,3 +105,37 @@
   color: #106cf6;
 }
 
+@media screen and (max-width: 768px) {
+  .header-content {
+    display: flex;
+    flex-flow: column;
+    margin: 1rem;
+  }
+
+  .header-content .header-content__back-link {
+    margin: 0.5rem 0;
+  }
+
+  .parsing-regions {
+    display: flex;
+    flex-flow: column;
+    margin: 0 1rem;
+  }
+
+  .parsing-regions .parsing-regions-right {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+
+  .parsing-regions .parsing-regions-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+
+  .table-container {
+    width: 100vw;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+}

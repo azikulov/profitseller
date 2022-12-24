@@ -2,7 +2,9 @@
 
 .table .table-body tr {
   font-weight: 500;
+  display: table-row;
 }
+
 
 .table .table-body__head td:nth-child(4) {
   color: #21212199;

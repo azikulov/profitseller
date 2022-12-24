@@ -3,26 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profitseller.me | Продвижение</title>
 
-    <link
-      rel="stylesheet"
-      href="../assets/styles/base.css"
-    />
+    <link rel="stylesheet" href="../assets/styles/base.css" />
     <link
       rel="stylesheet"
       href="../assets/styles/promotion/add-new-application.css"
     />
 
     <!-- Layout -->
-    <link
-      rel="stylesheet"
-      href="../assets/styles/layout.css"
-    />
+    <link rel="stylesheet" href="../assets/styles/layout.css" />
     <script src="../assets/scripts/layout.js"></script>
 
     <!-- Bootstrap 5 -->
@@ -76,11 +67,7 @@
               </g>
               <defs>
                 <clipPath id="clip0_92_2908">
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="white"
-                  />
+                  <rect width="24" height="24" fill="white" />
                 </clipPath>
               </defs>
             </svg>
@@ -97,10 +84,8 @@
           </div>
         </div>
 
-        <div>
-          <a
-            href="#cabinet-management"
-            class="header__button btn btn-light"
+        <div class="header-button-group">
+          <a href="#cabinet-management" class="header__button btn btn-light"
             >Управление кабиниетом</a
           >
           <a
@@ -108,14 +93,12 @@
             class="header__button btn btn-light header__button_active"
             >Продвижение</a
           >
-          <a
-            href="#analytics"
-            class="header__button btn btn-light"
+          <a href="#analytics" class="header__button btn btn-light"
             >Аналитика</a
           >
         </div>
 
-        <div>
+        <div class="header-user-info">
           <div class="header__balance">
             <span>Реферальный баланс</span>
             <span>1 842 руб</span>
@@ -129,18 +112,29 @@
           <div class="header__user-info">
             <span>Ivan Ivanov</span>
             <span>ivanovivan@mail.ru</span>
-            <img
-              src="../assets/images/user-photo.png"
-              alt=""
-            />
+            <img src="../assets/images/user-photo.png" alt="" />
           </div>
         </div>
       </div>
 
       <div class="side-menu">
-        <div class="side-menu__badge badge bg-primary">
-          Top
+        <div class="side-menu__close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
         </div>
+
+        <div class="side-menu__badge badge bg-primary">Top</div>
 
         <a href="#side-menu/link" class="side-menu__link">
           <img
@@ -164,10 +158,7 @@
 
         <hr class="divider" />
 
-        <a
-          href="./parsing.html"
-          class="side-menu__link side-menu__link_active"
-        >
+        <a href="./parsing.html" class="side-menu__link side-menu__link_active">
           <img
             src="../assets/images/icons/3.svg"
             width="24"
@@ -231,19 +222,13 @@
       <div class="content">
         <div class="field-container">
           <div class="field-container__row">
-            <div class="field-container__title">
-              Название команий
-            </div>
-            <div
-              class="field-container__input form-control"
-            >
-              Продвижение
-            </div>
+            <div class="field-container__title">Название команий</div>
+            <div class="field-container__input form-control">Продвижение</div>
           </div>
 
           <div>
             <a
-              href="#back"
+              href="./parsing.html"
               class="field-container__link btn btn-outline-primary"
               >Назад</a
             >
@@ -252,138 +237,94 @@
 
         <div class="field-container">
           <div class="field-container__row">
-            <div class="field-container__title">
-              Поисковые запросы
-            </div>
-            <div
-              class="field-container__input form-control"
-            >
+            <div class="field-container__title">Поисковые запросы</div>
+            <div class="field-container__input form-control">
               <span>Продвижение</span>
               <span>Продвижение</span>
               <span>Продвижение</span>
               <span>Продвижение</span>
               <span>Продвижение</span>
             </div>
-            <div class="field-container__request">
-              7 запросов
-            </div>
+            <div class="field-container__request">7 запросов</div>
           </div>
 
           <div class="field-container__row">
-            <div class="field-container__title">
-              Артикулы для парсинга
-            </div>
-            <div
-              class="field-container__input form-control"
-            >
+            <div class="field-container__title">Артикулы для парсинга</div>
+            <div class="field-container__input form-control">
               <span> 132312331231 </span>
               <span> 132312331231 </span>
               <span> 132312331231 </span>
               <span> 132312331231 </span>
               <span> 132312331231 </span>
             </div>
-            <div class="field-container__request">
-              7 запросов
-            </div>
+            <div class="field-container__request">7 запросов</div>
           </div>
         </div>
 
         <div class="parsing-regions">
           <div class="parsing-regions-left">
-            <div class="parsing-regions__title">
-              Регионы парсинга
-            </div>
+            <div class="parsing-regions__title">Регионы парсинга</div>
           </div>
 
           <div class="parsing-regions-right">
-            <a
-              href="#"
-              class="parsing-regions__btn btn btn-outline-primary"
+            <a href="#" class="parsing-regions__btn btn btn-outline-primary"
               >ЦФО <br />
               Москва</a
             >
-            <a
-              href="#"
-              class="parsing-regions__btn btn btn-outline-primary"
+            <a href="#" class="parsing-regions__btn btn btn-outline-primary"
               >СЗФО <br />
               Санк-Петербург</a
             >
-            <a
-              href="#"
-              class="parsing-regions__btn btn btn-outline-primary"
+            <a href="#" class="parsing-regions__btn btn btn-outline-primary"
               >СФО <br />
               Новосибирск</a
             >
-            <a
-              href="#"
-              class="parsing-regions__btn btn btn-outline-primary"
+            <a href="#" class="parsing-regions__btn btn btn-outline-primary"
               >ДФО <br />
               Хабаровск</a
             >
-            <a
-              href="#"
-              class="parsing-regions__btn btn btn-outline-primary"
+            <a href="#" class="parsing-regions__btn btn btn-outline-primary"
               >УФО <br />
               Екатеринбург</a
             >
-            <a
-              href="#"
-              class="parsing-regions__btn btn btn-outline-primary"
+            <a href="#" class="parsing-regions__btn btn btn-outline-primary"
               >ПФО <br />
               Казань</a
             >
-            <a
-              href="#"
-              class="parsing-regions__btn btn btn-outline-primary"
+            <a href="#" class="parsing-regions__btn btn btn-outline-primary"
               >ЮФО <br />
-              Казань</a
+              Краснодар</a
             >
           </div>
 
           <div class="parsing-regions-bottom-left">
-            <div class="parsing-regions__title">
-              Регионы парсинга
-            </div>
+            <div class="parsing-regions__title">Регионы парсинга</div>
           </div>
 
           <div class="parsing-regions-bottom-right">
-            <a
-              href="#"
-              class="parsing-regions__btn btn btn-outline-primary"
+            <a href="#" class="parsing-regions__btn btn btn-outline-primary"
               >10 стр</a
             >
-            <a
-              href="#"
-              class="parsing-regions__btn btn btn-outline-primary"
+            <a href="#" class="parsing-regions__btn btn btn-outline-primary"
               >20 стр</a
             >
-            <a
-              href="#"
-              class="parsing-regions__btn btn btn-outline-primary"
+            <a href="#" class="parsing-regions__btn btn btn-outline-primary"
               >30 стр</a
             >
-            <a
-              href="#"
-              class="parsing-regions__btn btn btn-outline-primary"
+            <a href="#" class="parsing-regions__btn btn btn-outline-primary"
               >40 стр</a
             >
-            <a
-              href="#"
-              class="parsing-regions__btn btn btn-outline-primary"
+            <a href="#" class="parsing-regions__btn btn btn-outline-primary"
               >50 стр</a
             >
-            <a
-              href="#"
-              class="parsing-regions__btn btn btn-outline-primary"
+            <a href="#" class="parsing-regions__btn btn btn-outline-primary"
               >60 стр</a
             >
           </div>
         </div>
 
         <div class="save-btn">
-          <a href="#save" class="btn btn-primary">
-            Сохранить
-          </a>
+          <a href="#save" class="btn btn-primary"> Сохранить </a>
         </div>
       </div>
     </div>

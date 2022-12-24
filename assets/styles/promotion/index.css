@@ -56,3 +56,22 @@
 .table .table-body tr {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+@media screen and (max-width: 768px) {
+  .link-group {
+    width: 100vw;
+    flex-flow: column;
+    padding: 1rem;
+    margin: 0;
+    gap: 0.5rem;
+  }
+
+  .table-container {
+    width: 100vw;
+    overflow-x: scroll;
+  }
+
+  .table-container .table {
+    white-space: nowrap;
+  }
+}

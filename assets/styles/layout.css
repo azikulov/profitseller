@@ -270,24 +270,7 @@
   .side-menu .side-menu__close {
     display: block;
     color: #212121;
-  }
-
-  /* Content and other file */
-
-  .link-group {
-    width: 100vw;
-    flex-flow: column;
-    padding: 1rem;
-    margin: 0;
-    gap: 0.5rem;
-  }
-
-  .table-container {
-    width: 100vw;
-    overflow-x: scroll;
-  }
-
-  .table-container .table {
-    white-space: nowrap;
+    border: 1px solid hwb(0 13% 87% / 0.2);
+    border-radius: 0.25rem;
   }
 }

@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 1rem 0;
+  padding: 0.5rem;
 }
 
 .field-container .field-container__row {
@@ -100,8 +101,46 @@
 }
 
 .save-btn a {
-  padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   font-family: "Manrope";
   font-size: 0.825rem;
   font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .field-container {
+    display: flex;
+    flex-flow: column;
+    padding: 0;
+  }
+
+  .field-container .field-container__row {
+    margin: 1rem;
+  }
+
+  .field-container .field-container__link {
+    margin-right: 1rem;
+  }
+
+  .parsing-regions {
+    width: calc(100vw - 2rem);
+    display: flex;
+    flex-flow: column;
+    margin: 0 1rem;
+  }
+
+  .parsing-regions .parsing-regions-right {
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
+  }
+
+  .parsing-regions .parsing-regions-bottom-right {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+  }
+
+  .save-btn {
+    margin: 2rem 1rem;
+  }
 }
