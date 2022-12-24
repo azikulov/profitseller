@@ -198,12 +198,8 @@
 }
 
 .side-menu .side-menu__badge {
-  margin-left: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.side-menu.side-menu_hide .side-menu__badge {
   margin-left: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Content */
