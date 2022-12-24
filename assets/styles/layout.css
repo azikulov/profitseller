@@ -6,6 +6,13 @@
   position: relative;
 }
 
+@media screen and (min-width: 2000px) {
+  .container-lg {
+    max-width: 2200px !important;
+    width: 100% !important;
+  }
+}
+
 .container-lg.side-menu-hide {
   grid-template-columns: 4rem 1fr;
 }
