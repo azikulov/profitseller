@@ -70,7 +70,9 @@
   color: #212121;
 }
 
-.table-container {
-  overflow-x: auto;
-  width: 100vw;
+@media screen and (max-width: 768px) {
+  .table-container {
+    overflow-x: auto;
+    width: 100vw;
+  }
 }
