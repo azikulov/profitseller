@@ -552,7 +552,11 @@
         </div>
 
         <div id="parsing-ad-modal" class="parsing-ad-modal">
-          <a href="#" class="parsing-ad-modal__close-btn">
+          <a
+            href="#"
+            class="parsing-ad-modal__close-btn"
+            onclick="closeallModal()"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -656,11 +660,83 @@
             </select>
           </div>
 
-          <a href="#save" class="parsing-ad-modal__create-btn btn btn-primary"
+          <a
+            href="#parsing-ad-modal"
+            class="parsing-ad-modal__create-btn btn btn-primary"
+            id="open-parsing-ad-inner-modal"
             >Создать</a
           >
         </div>
+
+        <div id="parsing-ad-inner-modal" class="parsing-ad-inner-modal">
+          <div class="parsing-ad-inner-modal__title">
+            Список запросов парсинга позиций
+          </div>
+          <div class="parsing-ad-inner-modal__subtitle">Название компании</div>
+
+          <div class="parsing-ad-inner-modal__checkbox">
+            <label>
+              <input type="checkbox" />
+              <span>Носки</span>
+            </label>
+          </div>
+
+          <div class="parsing-ad-inner-modal__checkbox">
+            <label>
+              <input type="checkbox" />
+              <span>Носки</span>
+            </label>
+          </div>
+
+          <div class="parsing-ad-inner-modal__checkbox">
+            <label>
+              <input type="checkbox" />
+              <span>Носки</span>
+            </label>
+          </div>
+
+          <div class="parsing-ad-inner-modal__checkbox">
+            <label>
+              <input type="checkbox" />
+              <span>Носки</span>
+            </label>
+          </div>
+
+          <div class="parsing-ad-inner-modal__btn-group">
+            <a
+              onclick="closeallModal()"
+              href="#"
+              class="parsing-ad-inner-modal__btn btn btn-primary"
+              >ОК</a
+            >
+            <a
+              onclick="closeallModal()"
+              href="#"
+              class="parsing-ad-inner-modal__btn btn btn-primary"
+              >Отмена</a
+            >
+          </div>
+        </div>
       </div>
     </div>
+
+    <script>
+      const modalInner = document.getElementById("parsing-ad-inner-modal");
+      const openModalInner = document.getElementById(
+        "open-parsing-ad-inner-modal"
+      );
+
+      openModalInner.addEventListener("click", () => {
+        modalInner.classList.add("parsing-ad-inner-modal_show");
+      });
+
+      // const closeAllModalButton = document.querySelectorAll(
+      //   "#close-all-modal-button"
+      // );
+
+      const closeallModal = () => {
+        modalInner.classList.remove("parsing-ad-inner-modal_show");
+      };
+    </script>
   </body>
 </html>
