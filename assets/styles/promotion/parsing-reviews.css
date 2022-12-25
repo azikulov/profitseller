@@ -76,7 +76,15 @@
   margin-top: 2.5rem;
   display: flex;
   align-items: end;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-left: .75rem;
+}
+
+.parsing-reviews-modal .parsing-reviews-modal__btn {
+  font-family: "Manrope";
+  padding: 0.5rem 1.25rem;
+  font-weight: 500;
+  font-size: 0.825rem;
 }
 
 .rating-table .rating-table__title {
@@ -104,6 +112,49 @@
 }
 
 .rating-table table tr td input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+}
+
+#repeat-parsing-reviews-modal:target {
+  display: block;
+}
+
+.parsing-reviews-modal .parsing-reviews-modal__table {
+  white-space: nowrap;
+  display: table;
+  border-collapse: collapse;
+}
+
+.parsing-reviews-modal .parsing-reviews-modal__table tr {
+  text-align: center;
+}
+
+.parsing-reviews-modal .parsing-reviews-modal__table thead tr {
+  font-family: Manrope;
+  font-size: 0.825rem;
+  font-weight: 500;
+  color: #21212199;
+}
+
+.parsing-reviews-modal .parsing-reviews-modal__table tbody tr {
+  font-family: Manrope;
+  font-size: 0.825rem;
+  font-weight: 500;
+  color: #212121;
+}
+
+.parsing-reviews-modal .parsing-reviews-modal__table tr td {
+  border: none;
+}
+
+.parsing-reviews-modal .parsing-reviews-modal__table tr td span {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.parsing-reviews-modal .parsing-reviews-modal__table tr td input {
   width: 1rem;
   height: 1rem;
 }
