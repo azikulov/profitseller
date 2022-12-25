@@ -74,5 +74,6 @@
   .table-container {
     overflow-x: auto;
     width: 100vw;
+    white-space: nowrap;
   }
 }

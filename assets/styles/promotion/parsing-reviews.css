@@ -1,0 +1,109 @@
+@import url(./parsing.css);
+
+.parsing-reviews-modal {
+  display: none;
+  z-index: 3;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 21rem;
+  height: 23rem;
+  background: #fff;
+  border: 1px solid #cedce5;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+#parsing-reviews-modal:target {
+  display: block;
+}
+
+.parsing-reviews-modal .parsing-reviews-modal__close-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #000;
+}
+
+.parsing-reviews-modal .parsing-reviews-modal__title {
+  color: #21212199;
+  font-family: Manrope;
+  font-size: 0.825rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.parsing-reviews-modal .parsing-reviews-modal__form {
+  margin: 1rem 0;
+}
+
+.parsing-reviews-modal .parsing-reviews-modal__form-title {
+  font-family: Manrope;
+  font-size: 0.825rem;
+  font-weight: 600;
+  color: #21212199;
+}
+
+.parsing-reviews-modal .parsing-reviews-modal__form .form-row {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  gap: 1rem;
+}
+
+.parsing-reviews-modal .parsing-reviews-modal__form-input {
+  width: 100%;
+  border: 1px solid #212121;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.825rem;
+  font-weight: 500;
+}
+
+.parsing-reviews-modal .parsing-reviews-modal__form-btn {
+  grid-column: 2 / 3;
+  width: 100%;
+  border-radius: 0.5rem;
+  font-size: 0.825rem;
+  font-family: Manrope;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+}
+
+.parsing-reviews-modal .parsing-reviews-modal__form .form-col {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: end;
+  justify-content: space-around;
+}
+
+.rating-table .rating-table__title {
+  font-family: "Manrope";
+  font-weight: 500;
+  font-size: 0.825rem;
+}
+
+.rating-table table {
+  margin-top: 0.5rem;
+}
+
+.rating-table table tr {
+  display: flex;
+  gap: 1rem;
+}
+
+.rating-table table tr td {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.rating-table table tr td svg {
+  margin-left: 0.25rem;
+}
+
+.rating-table table tr td input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+}
