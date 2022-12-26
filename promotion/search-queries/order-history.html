@@ -4,17 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profitseller.me | Парсинг позиций</title>
+    <title>Profitseller.me | Продвижение</title>
 
-    <link rel="stylesheet" href="../assets/styles/base.css" />
-    <link
-      rel="stylesheet"
-      href="../assets/styles/promotion/stock-balances.css"
-    />
+    <link rel="stylesheet" href="../../assets/styles/base.css" />
+    <link rel="stylesheet" href="../../assets/styles/promotion/index.css" />
 
     <!-- Layout -->
-    <link rel="stylesheet" href="../assets/styles/layout.css" />
-    <script src="../assets/scripts/layout.js"></script>
+    <link rel="stylesheet" href="../../assets/styles/layout.css" />
+    <script src="../../assets/scripts/layout.js"></script>
 
     <!-- Bootstrap 5 -->
     <link
@@ -75,7 +72,7 @@
 
           <div class="header__logo">
             <img
-              src="../assets/images/profitseller-logo.png"
+              src="../../assets/images/profitseller-logo.png"
               alt=""
               width="40"
               height="40"
@@ -112,7 +109,7 @@
           <div class="header__user-info">
             <span>Ivan Ivanov</span>
             <span>ivanovivan@mail.ru</span>
-            <img src="../assets/images/user-photo.png" alt="" />
+            <img src="../../assets/images/user-photo.png" alt="" />
           </div>
         </div>
       </div>
@@ -138,7 +135,7 @@
 
         <a href="#side-menu/link" class="side-menu__link">
           <img
-            src="../assets/images/icons/1.svg"
+            src="../../assets/images/icons/1.svg"
             width="24"
             height="24"
             alt=""
@@ -148,7 +145,7 @@
 
         <a href="#side-menu/link" class="side-menu__link">
           <img
-            src="../assets/images/icons/2.svg"
+            src="../../assets/images/icons/2.svg"
             width="24"
             height="24"
             alt=""
@@ -158,9 +155,9 @@
 
         <hr class="divider" />
 
-        <a href="./parsing.html" class="side-menu__link side-menu__link_active">
+        <a href="./parsing.html" class="side-menu__link">
           <img
-            src="../assets/images/icons/3.svg"
+            src="../../assets/images/icons/3.svg"
             width="24"
             height="24"
             alt=""
@@ -170,7 +167,7 @@
 
         <a href="./index.html" class="side-menu__link">
           <img
-            src="../assets/images/icons/4.svg"
+            src="../../assets/images/icons/4.svg"
             width="24"
             height="24"
             alt=""
@@ -178,9 +175,12 @@
           <span>Выкупы</span>
         </a>
 
-        <a href="./search-queries/index.html" class="side-menu__link">
+        <a
+          href="../search-queries/index.html"
+          class="side-menu__link side-menu__link_active"
+        >
           <img
-            src="../assets/images/icons/5.svg"
+            src="../../assets/images/icons/5.svg"
             width="24"
             height="24"
             alt=""
@@ -190,7 +190,7 @@
 
         <a href="#side-menu/link" class="side-menu__link">
           <img
-            src="../assets/images/icons/6.svg"
+            src="../../assets/images/icons/6.svg"
             width="24"
             height="24"
             alt=""
@@ -200,7 +200,7 @@
 
         <a href="#side-menu/link" class="side-menu__link">
           <img
-            src="../assets/images/icons/7.svg"
+            src="../../assets/images/icons/7.svg"
             width="24"
             height="24"
             alt=""
@@ -210,166 +210,134 @@
       </div>
 
       <div class="content">
-        <div class="header-content">
-          <div class="header-content__title">Носки</div>
-
-          <div class="header-content__link-group">
-            <a
-              href="./parsing-position.html"
-              class="header-content__link btn btn-link"
-              >Парсинг позиций</a
+        <div class="link-group flex-column gap-2">
+          <div class="">
+            <a href="./index.html" class="link-group__link mr-4 btn btn-link"
+              >Артикулы в работе</a
+            >
+            <a href="./parsing.html" class="link-group__link mr-4 btn btn-link"
+              >Парсинг</a
             >
             <a
-              href="./competition-request.html"
-              class="header-content__link btn btn-link"
-              >Конкуренция по запросам</a
-            >
-            <a href="#" class="header-content__link btn btn-link disabled"
-              >Остатки по складам</a
+              href="./order-history.html"
+              class="link-group__link mr-4 btn btn-link disabled"
+              >История заказов</a
             >
           </div>
 
-          <a
-            href="./parsing.html"
-            class="header-content__back-link btn btn-link"
-            >Назад</a
-          >
-        </div>
-
-        <div class="download-table">
-          <a href="#" class="download-table__link btn btn-link"
-            >Скачать отчет</a
-          >
+          <div class="">
+            <a
+              href="./order-history.html"
+              class="link-group__link mr-4 btn btn-link disabled"
+              >Общая</a
+            >
+            <a
+              href="./order-history-more.html"
+              class="link-group__link mr-4 btn btn-link"
+              >Подробная</a
+            >
+          </div>
         </div>
 
         <div class="table-container">
           <table class="table">
             <thead class="table-head">
-              <tr>
-                <th class="table-head__title" scope="col"></th>
-                <th class="table-head__title" scope="col">Размер</th>
-                <th class="table-head__title" scope="col">Склад</th>
-                <th class="table-head__title" scope="col"></th>
-                <th class="table-head__title" scope="col">20.12</th>
-                <th class="table-head__title" scope="col">19.12</th>
-                <th class="table-head__title" scope="col">18.12</th>
-                <th class="table-head__title" scope="col">17.12</th>
-              </tr>
+              <th class="table-head__title" scope="col">Артикул</th>
+              <th class="table-head__title" scope="col">Тариф</th>
+              <th class="table-head__title" scope="col">Дата оплаты</th>
+              <th class="table-head__title" scope="col">Число запросов</th>
+              <th class="table-head__title" scope="col">Общая динамика</th>
+              <th class="table-head__title" scope="col">
+                Коментарий <br />
+                менеджера
+              </th>
             </thead>
 
             <tbody class="table-body">
-              <tr class="table-body__head">
-                <td>24414242</td>
-                <td></td>
-                <td></td>
-                <td>Цена со скидкой</td>
-                <td>765 руб</td>
-                <td>765 руб</td>
-                <td>765 руб</td>
-                <td>765 руб</td>
+              <tr>
+                <td class="table-body__content">31231323</td>
+                <td class="table-body__content">Эконом</td>
+                <td class="table-body__content">24.06.22</td>
+                <td class="table-body__content">125</td>
+                <td class="table-body__content">
+                  <span style="color: #34dc0a"> +238 </span>
+                </td>
+                <td class="table-body__content">Отлично</td>
               </tr>
 
               <tr>
-                <td></td>
-                <td>
-                  <span> 16 </span>
+                <td class="table-body__content">31231323</td>
+                <td class="table-body__content">Эконом</td>
+                <td class="table-body__content">24.06.22</td>
+                <td class="table-body__content">125</td>
+                <td class="table-body__content">
+                  <span style="color: #fb3e3e"> +238 </span>
                 </td>
-                <td class="d-flex align-items-center">
-                  <span>
-                    СПБ <br />
-                    ЕКБ</span
-                  >
-                  <span style="margin-left: 0.25rem">Σ32</span>
-                </td>
-                <td></td>
-                <td>16</td>
-                <td>16</td>
-                <td>16</td>
-                <td>16</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>
-                  <span> 16 </span>
-                </td>
-                <td class="d-flex align-items-center">
-                  <span>
-                    СПБ <br />
-                    ЕКБ</span
-                  >
-                  <span style="margin-left: 0.25rem">Σ32</span>
-                </td>
-                <td></td>
-                <td>16</td>
-                <td>16</td>
-                <td>16</td>
-                <td>16</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>
-                  <span> 16 </span>
-                </td>
-                <td class="d-flex align-items-center">
-                  <span>
-                    СПБ <br />
-                    ЕКБ</span
-                  >
-                  <span style="margin-left: 0.25rem">Σ32</span>
-                </td>
-                <td></td>
-                <td>16</td>
-                <td>16</td>
-                <td>16</td>
-                <td>16</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>
-                  <span> 16 </span>
-                </td>
-                <td class="d-flex align-items-center">
-                  <span>
-                    СПБ <br />
-                    ЕКБ</span
-                  >
-                  <span style="margin-left: 0.25rem">Σ32</span>
-                </td>
-                <td></td>
-                <td>16</td>
-                <td>16</td>
-                <td>16</td>
-                <td>16</td>
-              </tr>
-
-              <tr class="table-body__head">
-                <td>24414242</td>
-                <td></td>
-                <td></td>
-                <td>Цена со скидкой</td>
-                <td>765 руб</td>
-                <td>765 руб</td>
-                <td>765 руб</td>
-                <td>765 руб</td>
+                <td class="table-body__content">Отлично</td>
               </tr>
 
               <tr>
-                <td></td>
-                <td>
-                  <span> 16 </span>
+                <td class="table-body__content">31231323</td>
+                <td class="table-body__content">Эконом</td>
+                <td class="table-body__content">24.06.22</td>
+                <td class="table-body__content">125</td>
+                <td class="table-body__content">
+                  <span style="color: #34dc0a"> +238 </span>
                 </td>
-                <td class="d-flex align-items-center">
-                  <span>
-                    СПБ <br />
-                    ЕКБ</span
-                  >
-                  <span style="margin-left: 0.25rem">Σ32</span>
+                <td class="table-body__content">Отлично</td>
+              </tr>
+
+              <tr>
+                <td class="table-body__content">31231323</td>
+                <td class="table-body__content">Эконом</td>
+                <td class="table-body__content">24.06.22</td>
+                <td class="table-body__content">125</td>
+                <td class="table-body__content">
+                  <span style="color: #fb3e3e"> +238 </span>
                 </td>
-                <td></td>
-                <td>16</td>
-                <td>16</td>
-                <td>16</td>
-                <td>16</td>
+                <td class="table-body__content">Отлично</td>
+              </tr>
+              <tr>
+                <td class="table-body__content">31231323</td>
+                <td class="table-body__content">Эконом</td>
+                <td class="table-body__content">24.06.22</td>
+                <td class="table-body__content">125</td>
+                <td class="table-body__content">
+                  <span style="color: #34dc0a"> +238 </span>
+                </td>
+                <td class="table-body__content">Отлично</td>
+              </tr>
+
+              <tr>
+                <td class="table-body__content">31231323</td>
+                <td class="table-body__content">Эконом</td>
+                <td class="table-body__content">24.06.22</td>
+                <td class="table-body__content">125</td>
+                <td class="table-body__content">
+                  <span style="color: #fb3e3e"> +238 </span>
+                </td>
+                <td class="table-body__content">Отлично</td>
+              </tr>
+              <tr>
+                <td class="table-body__content">31231323</td>
+                <td class="table-body__content">Эконом</td>
+                <td class="table-body__content">24.06.22</td>
+                <td class="table-body__content">125</td>
+                <td class="table-body__content">
+                  <span style="color: #34dc0a"> +238 </span>
+                </td>
+                <td class="table-body__content">Отлично</td>
+              </tr>
+
+              <tr>
+                <td class="table-body__content">31231323</td>
+                <td class="table-body__content">Эконом</td>
+                <td class="table-body__content">24.06.22</td>
+                <td class="table-body__content">125</td>
+                <td class="table-body__content">
+                  <span style="color: #fb3e3e"> +238 </span>
+                </td>
+                <td class="table-body__content">Отлично</td>
               </tr>
             </tbody>
           </table>

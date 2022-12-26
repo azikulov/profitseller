@@ -46,8 +46,8 @@
 .table .table-body .table-body__link {
   font-family: "Manrope", "Inter", sans-serif;
   font-weight: 600;
-  text-align: center;
   font-size: 0.825rem;
+  text-align: center;
   text-decoration: none;
   padding: 0;
   color: #106cf6;
@@ -55,6 +55,18 @@
 
 .table .table-body tr {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.save-btn {
+  float: right;
+}
+
+.save-btn .save-btn__link {
+  font-size: 0.825rem;
+  font-weight: 500;
+  font-family: Manrope;
+  text-decoration: none;
+  margin-right: .25rem;
 }
 
 @media screen and (max-width: 768px) {
