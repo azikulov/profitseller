@@ -88,6 +88,8 @@
 .table {
   font-size: 0.825rem;
   text-align: center;
+  font-weight: 500;
+  font-family: Manrope;
 }
 
 .table .table-head .table-head__title {
