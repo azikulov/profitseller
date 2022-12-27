@@ -1,0 +1,98 @@
+#search-queries-modal,
+#search-queries-query-modal {
+  display: none;
+}
+
+#search-queries-modal:target,
+#search-queries-query-modal:target {
+  display: block;
+}
+
+.search-queries-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  z-index: 3;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.search-queries-modal .search-queries-modal__close-btn {
+  width: 1.75rem;
+  height: 1.75rem;
+  position: absolute;
+  right: 0.75rem;
+  top: 0.75rem;
+  color: #000;
+}
+
+.search-queries-modal .search-queries-modal__form {
+  margin: 0.75rem 0;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  gap: 1rem 0;
+}
+
+.search-queries-modal .search-queries-modal__form-field {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  align-items: center;
+  width: 100%;
+}
+
+.search-queries-modal .search-queries-modal__form-field span,
+.search-queries-modal .search-queries-modal__title {
+  font-family: Manrope;
+  font-size: 0.825rem;
+  font-weight: 600;
+  color: #21212199;
+}
+
+.search-queries-modal .search-queries-modal__form-field select,
+.search-queries-modal .search-queries-modal__form-field input {
+  font-family: Manrope;
+  font-size: 0.825rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+.search-queries-modal .search-queries-modal__btn {
+  font-family: Manrope;
+  font-size: 0.825rem;
+  font-weight: 500;
+  padding: 0.5rem 1.25rem;
+}
+
+.search-queries-modal .search-queries-modal__table {
+  border-collapse: collapse;
+  border: #fff;
+  font-family: Manrope;
+  font-size: 0.825rem;
+  font-weight: 500;
+}
+
+.search-queries-modal .search-queries-modal__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-queries-modal .search-queries-modal__footer .search-queries-modal__footer-title {
+  font-family: Manrope;
+  font-size: 0.825rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .search-queries-modal {
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: none;
+  }
+}
