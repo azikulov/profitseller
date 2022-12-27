@@ -1,0 +1,166 @@
+.header-content {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content .header-content__title {
+  font-family: Manrope;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.header-content .header-content__btn {
+  font-family: Manrope;
+  font-size: 0.825rem;
+  font-weight: 600;
+  padding: 0.5rem 1.25rem;
+}
+
+.product-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 1rem 2rem;
+}
+
+.product-info .product-info__col {
+  display: flex;
+  flex-flow: column;
+  gap: 0.5rem;
+}
+
+.product-info .product-info__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.product-info .product-info__title,
+.product-info .product-info__btn,
+.product-info .product-info__value {
+  font-family: Manrope;
+  font-size: 0.825rem;
+  font-weight: 600;
+}
+
+.product-info .product-info__title {
+  color: #21212199;
+}
+
+.product-info .product-info__btn-group {
+  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: fit-content;
+  gap: 1rem;
+}
+
+.product-info .product-info__btn {
+  padding: 0.5rem 1.25rem;
+}
+
+.parsing-regions {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  margin: 0 2rem;
+  gap: 1rem;
+}
+
+.parsing-regions .parsing-regions__title {
+  font-family: Manrope;
+  font-size: 0.825rem;
+  font-weight: 600;
+  color: #21212199;
+}
+
+.parsing-regions .parsing-regions-right {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.parsing-regions .parsing-regions__btn {
+  font-family: Manrope;
+  font-size: 0.825rem;
+  font-weight: 500;
+  text-align: center;
+  height: 2.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: grid;
+  white-space: nowrap;
+  place-items: center;
+}
+
+.parsing-regions .parsing-regions-bottom {
+  grid-column: 1 / 3;
+  display: flex;
+  align-items: center;
+  gap: 0 1rem;
+}
+.parsing-regions .parsing-regions-bottom .parsing-regions__link {
+  padding: 0;
+  text-decoration: none;
+  font-size: 0.825rem;
+  font-family: Manrope;
+  font-weight: 500;
+}
+
+.download-table {
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  text-align: end;
+}
+
+.download-table .download-table__link {
+  padding: 0;
+  font-family: Manrope;
+  font-size: 0.825rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.table-body__head .table-body__content {
+  color: #0d6efd !important;
+  font-weight: 600 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .header-content {
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 1.25rem;
+    margin-top: 0;
+    padding: 0;
+    gap: 0.5rem;
+  }
+
+  .header-content .header-content__back-link {
+    margin: 0.5rem 0;
+  }
+
+  .product-info {
+    grid-template-columns: 1fr;
+    width: calc(100vw - 2.5rem);
+    gap: 0.5rem;
+    margin: 1.25rem;
+  }
+
+  .parsing-regions {
+    display: flex;
+    flex-flow: column;
+    margin: 0 1rem;
+  }
+
+  .parsing-regions .parsing-regions-right {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+
+  .parsing-regions .parsing-regions-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+}
