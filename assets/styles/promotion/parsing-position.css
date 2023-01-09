@@ -21,6 +21,7 @@
 
 .header-content .header-content__link-group {
   display: flex;
+  justify-content: flex-end;
 }
 
 .header-content .header-content__back-link {
