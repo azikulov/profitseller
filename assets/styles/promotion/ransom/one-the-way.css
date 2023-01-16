@@ -1,0 +1,10 @@
+.get-qr {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 .25rem;
+}
+
+.get-qr__button {
+  font-size: 0.825rem !important;
+  font-weight: 500;
+}
