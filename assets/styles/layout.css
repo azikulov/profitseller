@@ -138,8 +138,8 @@
 
 .side-menu.side-menu_hide {
   transform: scale(1);
-  top: 5rem;
-  left: 2rem;
+  top: 4rem;
+  left: .75rem;
 }
 
 .side-menu .side-menu__close {
@@ -265,6 +265,10 @@
 
 /* Media screens */
 @media screen and (max-width: 768px) {
+  .side-menu-left {
+    display: none;
+  }
+
   .content {
     height: 100% !important;
     overflow: visible;
@@ -314,6 +318,7 @@
   }
 
   .side-menu {
+    transform: scale(1);
     position: fixed;
     top: 0;
     left: 0;
