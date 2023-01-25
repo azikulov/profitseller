@@ -2,6 +2,8 @@
   width: 100%;
   /* min-width: 1140px; */
   position: relative;
+  display: grid;
+  grid-template-columns: 4rem 1fr;
 }
 
 @media screen and (min-width: 2000px) {
@@ -9,10 +11,6 @@
     max-width: 2200px !important;
     width: 100% !important;
   }
-}
-
-.container-lg.side-menu-hide {
-  grid-template-columns: 4rem 1fr;
 }
 
 .header {
@@ -172,25 +170,6 @@
   margin-left: 0.5rem;
 }
 
-/* .side-menu.side-menu_hide .side-menu__link {
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  height: 4rem;
-  width: 4rem;
-} */
-
-/* .side-menu.side-menu_hide .side-menu__link span {
-  text-align: center;
-  width: inherit;
-  font-size: 0.625rem;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0.25rem 0 0 0;
-} */
-
 .side-menu > .divider {
   width: calc(100% - 2.5rem);
   margin: 1rem auto;
@@ -199,13 +178,82 @@
   opacity: 1;
 }
 
-/* .side-menu.side-menu_hide > .divider {
-  width: 100%;
-} */
-
 .side-menu .side-menu__badge {
   margin-left: 0.75rem;
   margin-bottom: 0.5rem;
+}
+
+/* Side Menu Left */
+.side-menu-left {
+  grid-area: 2 / 1 / 3 / 2;
+  width: 18.5rem;
+  padding-top: 1rem;
+  border-right: 1px solid #cedce5;
+  height: calc(100vh - 4rem);
+}
+
+.side-menu-left.side-menu-left_hide {
+  width: 4rem;
+}
+
+.side-menu-left .side-menu-left__link {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1.25rem;
+  text-decoration: none;
+  color: #000;
+  font-size: 0.825rem;
+  font-weight: 500;
+}
+
+.side-menu-left .side-menu-left__link.side-menu-left__link_active,
+.side-menu-left .side-menu-left__link:hover {
+  background: #e5f4fe;
+}
+
+.side-menu-left .side-menu-left__link span {
+  font-family: "Manrope", "Inter", sans-serif;
+  margin-left: 0.5rem;
+}
+
+.side-menu-left.side-menu-left_hide .side-menu-left__link {
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  height: 4rem;
+  width: 4rem;
+}
+
+.side-menu-left.side-menu-left_hide .side-menu-left__link span {
+  text-align: center;
+  width: inherit;
+  font-size: 0.625rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0.25rem 0 0 0;
+}
+
+.side-menu-left > .divider {
+  width: calc(100% - 2.5rem);
+  margin: 1rem auto;
+  background: none;
+  border-bottom: 1px solid #cedce5;
+  opacity: 1;
+}
+
+.side-menu-left.side-menu-left_hide > .divider {
+  width: 100%;
+}
+
+.side-menu-left .side-menu-left__badge {
+  margin-left: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.side-menu-left.side-menu-left_hide .side-menu-left__badge {
+  margin-left: 0.75rem;
 }
 
 /* Content */
