@@ -136,12 +136,6 @@
   left: -7rem;
 }
 
-.side-menu.side-menu_hide {
-  transform: scale(1);
-  top: 4rem;
-  left: .75rem;
-}
-
 .side-menu .side-menu__close {
   position: absolute;
   right: 1.5rem;
