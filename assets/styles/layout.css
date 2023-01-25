@@ -125,16 +125,23 @@
 .side-menu {
   background: #fff;
   position: absolute;
-  top: 5rem;
-  left: 2rem;
   z-index: 1;
-  transform: scale(1);
   width: 18.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-radius: 0.5rem;
   border: 1px solid #cedce5;
   transition: 0.4s ease;
+
+  transform: scale(0);
+  top: -8rem;
+  left: -7rem;
+}
+
+.side-menu.side-menu_hide {
+  transform: scale(1);
+  top: 5rem;
+  left: 2rem;
 }
 
 .side-menu .side-menu__close {
@@ -143,10 +150,6 @@
   display: none;
   width: 1.75rem;
   height: 1.75rem;
-}
-
-.side-menu.side-menu_hide {
-  transform: scale(0) translate(-30rem, -30rem);
 }
 
 .side-menu .side-menu__link {
