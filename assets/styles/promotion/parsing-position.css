@@ -109,7 +109,91 @@
   color: #106cf6;
 }
 
+.modal-article {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 1px solid #cedce5;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.modal-article__title {
+  text-align: center;
+  color: #212121;
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.modal-article__close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.modal-inner {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.modal-image img {
+  width: 13rem;
+  height: 13rem;
+  margin-bottom: 1rem;
+}
+
+.modal-images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.modal-images img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+}
+
+.modal-row {
+  margin-bottom: 0.25rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.modal-row__title {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: rgba(33, 33, 33, 0.6);
+}
+
+.modal-row__value {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #212121;
+}
+
 @media screen and (max-width: 768px) {
+  .modal-article {
+    top: 0;
+    transform: translateX(-50%);
+    height: 100vh;
+  }
+
+  .modal-image img {
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+  }
+  
+
+
   .header-content {
     display: flex;
     flex-flow: column;
