@@ -17,7 +17,9 @@
 
     <!-- Layout -->
     <link rel="stylesheet" href="../assets/styles/layout.css" />
-    <script src="../assets/scripts/layout.js"></script>
+
+    <link rel="stylesheet" href="../assets/styles/profile/history-of-operations.css" />
+    <link rel="stylesheet" href="../assets/styles/profile/profile-information.css" />
 
     <!-- Bootstrap 5 -->
     <link
@@ -91,9 +93,7 @@
           <a href="#cabinet-management" class="header__button btn btn-light"
             >Управление кабиниетом</a
           >
-          <a
-            href="../promotion/index.html"
-            class="header__button btn btn-light header__button_active"
+          <a href="../promotion/index.html" class="header__button btn btn-light"
             >Продвижение</a
           >
           <a href="#analytics" class="header__button btn btn-light">Аналитика</a>
@@ -118,243 +118,148 @@
         </div>
       </div>
 
-      <div class="side-menu">
-        <div class="side-menu__close">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </div>
-
-        <div class="side-menu__badge badge bg-primary">Top</div>
-
-        <a href="#side-menu/link" class="side-menu__link">
-          <img src="../../assets/images/icons/1.svg" width="24" height="24" alt="" />
-          <span>Автоматизация стратегий</span>
-        </a>
-
-        <a href="#side-menu/link" class="side-menu__link">
-          <img src="../../assets/images/icons/2.svg" width="24" height="24" alt="" />
-          <span>Авторепутация</span>
-        </a>
-
-        <hr class="divider" />
-
-        <a href="../parsing.html" class="side-menu__link">
-          <img src="../../assets/images/icons/3.svg" width="24" height="24" alt="" />
-          <span>Парсинг</span>
-        </a>
-
-        <a href="../index.html" class="side-menu__link side-menu__link_active">
-          <img src="../../assets/images/icons/4.svg" width="24" height="24" alt="" />
-          <span>Выкупы</span>
-        </a>
-
-        <a href="/promotion/search-queries/index.html" class="side-menu__link">
-          <img src="../../assets/images/icons/5.svg" width="24" height="24" alt="" />
-          <span>Поисковые запросы</span>
-        </a>
-
-        <a href="#side-menu/link" class="side-menu__link">
-          <img src="../../assets/images/icons/6.svg" width="24" height="24" alt="" />
-          <span>Управление рекламой</span>
-        </a>
-
-        <a href="/promotion/cheating/index.html" class="side-menu__link">
-          <img src="../../assets/images/icons/7.svg" width="24" height="24" alt="" />
-          <span>Накрутка</span>
-        </a>
-      </div>
-
-      <div class="side-menu-left side-menu-left_hide">
-        <div class="side-menu-left__badge badge bg-primary">Top</div>
-
-        <a href="#side-menu-left/link" class="side-menu-left__link">
-          <img src="../../assets/images/icons/1.svg" width="24" height="24" alt="" />
-          <span>Автоматизация стратегий</span>
-        </a>
-
-        <a href="#side-menu-left/link" class="side-menu-left__link">
-          <img src="../../assets/images/icons/2.svg" width="24" height="24" alt="" />
-          <span>Авторепутация</span>
-        </a>
-
-        <hr class="divider" />
-
-        <a href="../parsing.html" class="side-menu-left__link">
-          <img src="../../assets/images/icons/3.svg" width="24" height="24" alt="" />
-          <span>Парсинг</span>
-        </a>
-
-        <a href="../index.html" class="side-menu-left__link side-menu-left__link_active">
-          <img src="../../assets/images/icons/4.svg" width="24" height="24" alt="" />
-          <span>Выкупы</span>
-        </a>
-
-        <a href="/promotion/search-queries/index.html" class="side-menu-left__link">
-          <img src="../../assets/images/icons/5.svg" width="24" height="24" alt="" />
-          <span>Поисковые запросы</span>
-        </a>
-
-        <a href="#side-menu-left/link" class="side-menu-left__link">
-          <img src="../../assets/images/icons/6.svg" width="24" height="24" alt="" />
-          <span>Управление рекламой</span>
-        </a>
-
-        <a href="/promotion/cheating/index.html" class="side-menu-left__link">
-          <img src="../../assets/images/icons/7.svg" width="24" height="24" alt="" />
-          <span>Накрутка</span>
-        </a>
-      </div>
-
       <div class="content">
-        <div class="title">Подобранные поисковые фразы</div>
+        <div class="title">Информация о профиле</div>
 
-        <div class="content-row">
-          <div class="content-column">
-            <div class="content-column__title">Выбрано фраз <span>24</span> шт</div>
-            <button class="content-column__btn btn btn-primary">Выбрать все</button>
-            <button class="content-column__btn btn btn-outline-primary">Снять все</button>
-          </div>
-
-          <div class="content-column">
-            <div class="content-column__title">Сортировка</div>
-            <button class="content-column__btn btn btn-primary">По популярности</button>
-            <button class="content-column__btn btn btn-outline-primary">
-              По сходству
-            </button>
-          </div>
-
-          <div class="content-column">
-            <div class="content-column__title">Минус слова</div>
-            <textarea class="content-column__textarea" cols="30" rows="5">
-брюки женские стильные брюки женские стильные брюки женские стильные брюки женские стильные брюки женские стильные </textarea
-            >
-            <div class="content-column__textarea-counter">10 слов</div>
-          </div>
+        <div class="back-btn">
+          <a class="back-btn__link btn btn-link" href="#">Назад</a>
         </div>
+
+        <form action="" class="profile-form">
+          <div class="profile-form__column-1">
+            <div class="profile-form__field">
+              <p class="profile-form__field-title">Имя</p>
+              <input class="profile-form__field-input" value="Иван" />
+            </div>
+
+            <div class="profile-form__field">
+              <p class="profile-form__field-title">Фамилия</p>
+              <input class="profile-form__field-input" value="Иванов" />
+            </div>
+
+            <div class="profile-form__field">
+              <p class="profile-form__field-title">E-mail</p>
+              <input class="profile-form__field-input" value="ivan@gmail.com" />
+              <div class="profile-form__verify-status">
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="10.5" cy="10.5" r="10.5" fill="#106CF6" />
+                  <path
+                    d="M8.52691 12.4811L14.3475 6.28863C14.5284 6.09621 14.7586 6 15.0381 6C15.3176 6 15.5478 6.09621 15.7287 6.28863C15.9096 6.48105 16 6.72595 16 7.02332C16 7.3207 15.9096 7.5656 15.7287 7.75802L9.21749 14.6851C9.02018 14.895 8.78998 15 8.52691 15C8.26383 15 8.03363 14.895 7.83632 14.6851L5.2713 11.9563C5.09043 11.7638 5 11.5189 5 11.2216C5 10.9242 5.09043 10.6793 5.2713 10.4869C5.45217 10.2945 5.68236 10.1983 5.96188 10.1983C6.2414 10.1983 6.4716 10.2945 6.65247 10.4869L8.52691 12.4811Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="profile-form__field">
+              <p class="profile-form__field-title">Телефон</p>
+              <input class="profile-form__field-input" type="tel" value="89523759943" />
+              <a href="#" class="profile-form__btn btn btn-link">Подтвердить</a>
+            </div>
+
+            <div class="profile-form__field">
+              <p class="profile-form__field-title">Telegram</p>
+              <input class="profile-form__field-input" value="@daeeyang" />
+              <a href="#" class="profile-form__btn btn btn-link">Синхронизировать</a>
+            </div>
+
+            <div class="profile-form__btn-group">
+              <button type="button" class="btn btn-outline-primary">
+                Изменить пароль
+              </button>
+              <button type="button" class="btn btn-outline-primary">
+                Изменить данные
+              </button>
+            </div>
+          </div>
+
+          <div class="profile-form__column-2">
+            <div class="profile-form__field">
+              <div class="profile-form__field-title">Пригласил</div>
+              <div class="profile-form__field-value">1321</div>
+            </div>
+
+            <div class="profile-form__field">
+              <div class="profile-form__field-title">Дата регистраций</div>
+              <div class="profile-form__field-value">24.06.22 13:00</div>
+              <a href="#" class="btn btn-link">История посещений</a>
+            </div>
+
+            <div class="profile-form__field">
+              <div class="profile-form__field-title">Текущий баланс</div>
+              <div class="profile-form__field-value">12345 руб</div>
+              <a href="#" class="btn btn-outline-primary">Пополнить</a>
+              <a href="#" class="btn btn-link">История</a>
+            </div>
+
+            <div class="profile-form__field">
+              <div class="profile-form__field-title">Реферальный баланс</div>
+              <div class="profile-form__field-value">12345 руб</div>
+              <a href="#" class="btn btn-link">История начислений</a>
+            </div>
+          </div>
+        </form>
 
         <div class="table-container">
+          <div class="table-header">
+            <div class="table-header__title">Подключенные кабинеты</div>
+            <a href="#" class="table-header__link btn btn-link"
+              >Подключить новый кабинет</a
+            >
+          </div>
+
           <table class="table">
             <thead class="table-head">
+              <th class="table-head__title" scope="col">Магазин</th>
+              <th class="table-head__title" scope="col">API ключ</th>
+              <th class="table-head__title" scope="col">Profitseller manager</th>
+              <th class="table-head__title" scope="col">Уровень доступа</th>
               <th class="table-head__title" scope="col"></th>
-              <th class="table-head__title" scope="col">Запрос</th>
-              <th class="table-head__title" scope="col">
-                Частотность <br />
-                нед
-              </th>
-              <th class="table-head__title" scope="col">
-                Частотность <br />
-                мес
-              </th>
-              <th class="table-head__title" scope="col">
-                Уровень расхода <br />
-                %
-              </th>
-              <th class="table-head__title" scope="col">
-                Конкурентов <br />
-                в рекламе
-              </th>
-              <th class="table-head__title" scope="col">
-                Конкурентов <br />
-                в выдаче
-              </th>
-              <th class="table-head__title" scope="col">
-                В минус <br />
-                фразы
-              </th>
             </thead>
 
             <tbody class="table-body">
               <tr>
+                <td class="table-body__content">WB</td>
+                <td class="table-body__content">+</td>
+                <td class="table-body__content">+</td>
+                <td class="table-body__content">Владелец</td>
                 <td class="table-body__content">
-                  <input type="checkbox" checked />
-                </td>
-                <td class="table-body__content">
-                  <a href="#"> Носки </a>
-                </td>
-                <td class="table-body__content">1232</td>
-                <td class="table-body__content">1232</td>
-                <td class="table-body__content">76</td>
-                <td class="table-body__content">132</td>
-                <td class="table-body__content">132</td>
-                <td class="table-body__content">
-                  <input type="checkbox" name="" id="" />
+                  <button class="btn btn-link">Предоставить доступ</button>
                 </td>
               </tr>
 
               <tr>
+                <td class="table-body__content">Ozon</td>
+                <td class="table-body__content">+</td>
+                <td class="table-body__content">-</td>
+                <td class="table-body__content">Админ</td>
                 <td class="table-body__content">
-                  <input type="checkbox" checked />
-                </td>
-                <td class="table-body__content">
-                  <a href="#"> Носки </a>
-                </td>
-                <td class="table-body__content">1232</td>
-                <td class="table-body__content">1232</td>
-                <td class="table-body__content">76</td>
-                <td class="table-body__content">132</td>
-                <td class="table-body__content">132</td>
-                <td class="table-body__content">
-                  <input type="checkbox" name="" id="" />
+                  <button class="btn btn-link">Предоставить доступ</button>
                 </td>
               </tr>
 
               <tr>
+                <td class="table-body__content">Я.Маркет</td>
+                <td class="table-body__content">-</td>
+                <td class="table-body__content">+</td>
+                <td class="table-body__content">Менеджер</td>
                 <td class="table-body__content">
-                  <input type="checkbox" checked />
-                </td>
-                <td class="table-body__content">
-                  <a href="#"> Носки </a>
-                </td>
-                <td class="table-body__content">1232</td>
-                <td class="table-body__content">1232</td>
-                <td class="table-body__content">76</td>
-                <td class="table-body__content">132</td>
-                <td class="table-body__content">132</td>
-                <td class="table-body__content">
-                  <input type="checkbox" name="" id="" />
-                </td>
-              </tr>
-
-              <tr>
-                <td class="table-body__content">
-                  <input type="checkbox" checked />
-                </td>
-                <td class="table-body__content">
-                  <a href="#"> Носки </a>
-                </td>
-                <td class="table-body__content">1232</td>
-                <td class="table-body__content">1232</td>
-                <td class="table-body__content">76</td>
-                <td class="table-body__content">132</td>
-                <td class="table-body__content">132</td>
-                <td class="table-body__content">
-                  <input type="checkbox" name="" id="" />
+                  <button class="btn btn-link">Предоставить доступ</button>
                 </td>
               </tr>
             </tbody>
           </table>
-        </div>
 
-        <div class="table-footer">
-          <button class="table-footer__button btn btn-outline-primary">
-            Добавить поисковые <br />
-            фразы в работу
-          </button>
-          <button class="table-footer__button btn btn-outline-primary">
-            Редактировать условия <br />
-            поиска фраз
-          </button>
+          <div class="table-footer">
+            <div class="table-footer__title">Пригласить нового пользователя (реферала)</div>
+            <a href="#" class="btn btn-link">Пригласить</a>
+          </div>
         </div>
       </div>
     </div>
