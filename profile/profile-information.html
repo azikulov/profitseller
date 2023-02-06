@@ -194,7 +194,7 @@
             <div class="profile-form__field">
               <div class="profile-form__field-title">Текущий баланс</div>
               <div class="profile-form__field-value">12345 руб</div>
-              <a href="#" class="btn btn-outline-primary">Пополнить</a>
+              <a href="#refill" class="btn btn-outline-primary">Пополнить</a>
               <a href="#" class="btn btn-link">История</a>
             </div>
 
@@ -257,10 +257,50 @@
           </table>
 
           <div class="table-footer">
-            <div class="table-footer__title">Пригласить нового пользователя (реферала)</div>
+            <div class="table-footer__title">
+              Пригласить нового пользователя (реферала)
+            </div>
             <a href="#" class="btn btn-link">Пригласить</a>
           </div>
         </div>
+      </div>
+
+      <div id="refill" class="refill-modal">
+        <div class="refill-modal__close-btn">
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z"
+              fill="#212121"
+            />
+          </svg>
+        </div>
+        <div class="refill-modal__title">Пополнить баланс</div>
+
+        <div class="refill-modal__row-1">
+          <div class="btn btn-primary active">Банковской картой</div>
+          <div class="btn btn-outline-primary">По реквизитам</div>
+        </div>
+
+        <div class="refill-modal__row-2">
+          <div class="refill-modal__field">
+            <div class="refill-modal__field-title">Пополнить на сумму</div>
+            <input class="refill-modal__field-input" style="width: 5rem" value="632345" />
+            <div class="refill-modal__field-title">руб</div>
+          </div>
+
+          <div class="refill-modal__field">
+            <div class="refill-modal__field-title">Почта для квитанции</div>
+            <input class="refill-modal__field-input" value="ivanivanov@gmail.com" />
+          </div>
+        </div>
+
+        <a href="#" class="refill-modal__btn btn btn-primary">Пополнить</a>
       </div>
     </div>
   </body>
