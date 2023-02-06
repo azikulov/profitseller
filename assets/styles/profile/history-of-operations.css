@@ -1,0 +1,13 @@
+.container-lg {
+  display: block;
+  grid-template-columns: none;
+}
+
+.title {
+  margin-bottom: .25rem;
+}
+
+.back-btn__link {
+  margin-left: 1.5rem;
+  padding: 0 !important;
+}

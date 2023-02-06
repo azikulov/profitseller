@@ -1,6 +1,5 @@
 .container-lg {
   width: 100%;
-  /* min-width: 1140px; */
   position: relative;
   display: grid;
   grid-template-columns: 4rem 1fr;
