@@ -1,0 +1,88 @@
+.profile-form {
+  display: block !important;
+}
+
+.profile-form__field {
+  align-items: center;
+  border-color: rgba(33, 33, 33, 0.6) !important;
+}
+
+.profile-form__field-title {
+  width: auto;
+  margin: 0;
+}
+
+.profile-form__field-input {
+  width: 11.5rem;
+}
+
+.form-select {
+  border-color: #000 !important;
+  width: fit-content !important;
+  font-family: Manrope !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  margin-top: 0.5rem !important;
+  margin-left: 1.5rem !important;
+}
+
+/* Categories */
+.categories {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.categories__title {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #212121;
+  margin-bottom: 0.5rem;
+}
+
+.categories__row {
+  display: flex;
+  gap: 2rem;
+}
+
+.categories__col {
+  display: flex;
+  flex-flow: column;
+  gap: 0.5rem;
+}
+
+.categories__field {
+  display: grid;
+  grid-template-columns: 2rem 1fr 2rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.categories__field-icon {
+  display: grid;
+  place-items: center;
+}
+
+.categories__field-title {
+  white-space: nowrap;
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #212121;
+}
+
+.categories__field-checkbox {
+  accent-color: #000;
+  width: 1rem;
+  height: 1rem;
+}
+
+.category-btn {
+  margin: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .categories__row {
+    flex-flow: column;
+  }
+}

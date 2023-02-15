@@ -1,0 +1,110 @@
+.profile-form__field-title {
+  width: 9rem;
+}
+
+.profile-form__field-input {
+  width: 15rem;
+}
+
+.profile-form__column-2-title {
+  font-family: "Manrope";
+  font-weight: 500;
+  font-size: 0.825rem;
+  color: #106cf6;
+  text-decoration: none;
+}
+
+.tariff {
+  margin-left: 1.5rem;
+}
+
+.tariff__title {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 1rem;
+  color: #212121;
+}
+
+.tariff__subtitle {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #212121;
+  margin-top: 0.5rem;
+}
+
+.tariff__field {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.tariff__field-name,
+.tariff__field-date {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #212121;
+}
+
+.tariff__field-checkboxes {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  gap: 0.5rem;
+}
+
+.tariff__field-checkbox {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.tariff__field-checkbox svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.tariff__field-checkbox input {
+  width: 1rem;
+  height: 1rem;
+  accent-color: #000;
+}
+
+.form-select {
+  width: fit-content !important;
+  font-family: "Manrope" !important;
+  font-weight: 400 !important;
+  border-color: #000 !important;
+  font-size: 0.875rem !important;
+  color: #212121 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .tariff-container {
+    width: calc(100vw - 3rem);
+    overflow: auto;
+  }
+
+  .profile-form__field-title {
+    width: 100% !important;
+  }
+
+  .profile-form__field {
+    flex-flow: row !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+  }
+
+  .profile-form__btn {
+    padding: 0.375rem 0.75rem !important;
+  }
+
+  .profile-form__column-2 .profile-form__field {
+    display: flex !important;
+    flex-flow: row !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+  }
+}
